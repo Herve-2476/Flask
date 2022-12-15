@@ -1,0 +1,19 @@
+h1 {
+    color: white;
+    font-size: 5em;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+    /* background-image: url("{{url_for('static',filename='traineau.jpg')}}"); */
+}
+
+p {
+    text-align: center;
+}
+
+div {
+    background-image: url("traineau.jpg");
+    height: 100em;
+}
