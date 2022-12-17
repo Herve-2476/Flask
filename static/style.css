@@ -15,5 +15,9 @@ p {
 
 div {
     background-image: url("traineau.jpg");
-    height: 100em;
+    height: 50em;
+}
+
+audio {
+    display: none;
 }

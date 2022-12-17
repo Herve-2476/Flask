@@ -2,7 +2,11 @@
 <HTML>
 
 <head>
-    <LINK href="{{url_for('static',filename='style.css')}}" rel="stylesheet" type="text/css">    
+
+    <link href="{{url_for('static',filename='style.css')}}" rel="stylesheet" type="text/css"> 
+    <script src="{{url_for('static',filename='code.js')}}" async></script>
+
+
 </head>
 
 <body >
@@ -10,9 +14,18 @@
 <div ><br/>
 
     <p><img src="{{url_for('static',filename='qrcode.png')}}"></p>
+    
+    <label for="sample">Saisir les mots magiques : </label>
+    <input id = "saisie" type="text" name="text" id="sample" />
+
+    <audio id="lecteur" src="{{ url_for( 'static', filename='merry.mp3' ) }}" controls preload="auto"> Votre navigateur ne supporte pas la balise audio.
+    </audio>
+
 
 </div>
 </body>
+
+
 
 
 
