@@ -25,4 +25,10 @@ audio {
 label {
     color: black;
     font-weight: 900;
+    font-size: 2em;
+    background-color: aliceblue;
+}
+
+input {
+    font-size: 2em;
 }
