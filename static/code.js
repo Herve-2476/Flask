@@ -7,11 +7,12 @@
 
 
 let input = document.querySelector('input');
+const image = document.querySelector('img');
 
 input.addEventListener('keyup', (e) => logKey());
 
 function logKey(e) {
     var x = document.getElementById("saisie").value;
     if (
-        x == "Santa Claus") { document.getElementById("lecteur").play() } else { document.getElementById("lecteur").pause() };
+        x.toLowerCase() == "santa claus") { document.getElementById("lecteur").play(); image.src = "static/champagne.jpg" } else { document.getElementById("lecteur").pause() };
 }
