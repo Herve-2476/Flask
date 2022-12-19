@@ -5,14 +5,17 @@
 
 // function analyze(event) { alert("ok") };
 
+let input = document.querySelector("input");
+const image = document.querySelector("img");
 
-let input = document.querySelector('input');
-const image = document.querySelector('img');
-
-input.addEventListener('keyup', (e) => logKey());
+input.addEventListener("keyup", (e) => logKey());
 
 function logKey(e) {
-    var x = document.getElementById("saisie").value;
-    if (
-        x.toLowerCase() == "santa claus") { document.getElementById("lecteur").play(); image.src = "static/champagne.jpg" } else { document.getElementById("lecteur").pause() };
+  var x = document.getElementById("saisie").value;
+  if (x.toLowerCase() == "santa claus") {
+    document.getElementById("lecteur").play();
+    image.src = "static/champagne.jpg";
+  } else {
+    document.getElementById("lecteur").pause();
+  }
 }
