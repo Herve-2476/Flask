@@ -1,34 +1,61 @@
 h1 {
-    color: white;
-    font-size: 3em;
-    text-align: center;
+  color: white;
+  font-size: 3em;
+  text-align: center;
 }
 
 body {
-    background-color: black;
-    /* background-image: url("{{url_for('static',filename='traineau.jpg')}}"); */
-}
+  background-color: black;
+  display: block;
 
-p {
-    text-align: center;
+  /* background-image: url("{{url_for('static',filename='traineau.jpg')}}"); */
 }
 
 div {
-    background-image: url("traineau.jpg");
-    height: 50em;
+  background-image: url("traineau.jpg");
+  height: 60em;
+  width: 100%;
+  vertical-align: middle;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 audio {
-    display: none;
+  display: none;
+}
+video {
+  width: 80%;
+  display: none;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
+span {
+  display: none;
+  height: 2.2em;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 label {
-    color: black;
-    font-weight: 900;
-    font-size: 2em;
-    background-color: aliceblue;
+  color: black;
+  font-weight: 900;
+  font-size: 2em;
+  background-color: aliceblue;
+  /* visibility: hidden; */
 }
 
 input {
-font-size: 2em;
+  font-size: 2em;
+  /* display: none; */
+}
+img {
+  /* display: flex; */
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
 }

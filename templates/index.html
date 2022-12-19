@@ -12,20 +12,21 @@
   <body>
     <h1>Monnier & Cie : Réparateur agréé de traineaux</h1>
     <div>
-      <br />
-
-      <p>
-        <img
-          src="{{url_for('static',filename='qrcode.png')}}"
-          width="200"
-          height="200"
+      <video loop>
+        <source
+          src="{{url_for('static',filename='film_traineau.mp4')}}"
+          type="video/mp4"
         />
-      </p>
-      <br />
-      <br />
-      <label for="sample">Saisir les mots magiques : </label>
-      <input id="saisie" type="text" name="text" id="sample" />
-
+      </video>
+      <img
+        src="{{url_for('static',filename='qrcode.png')}}"
+        width="200"
+        height="200"
+      />
+      <span>
+        <label for="saisie">Saisir les mots magiques : </label>
+        <input id="saisie" type="text" name="text" />
+      </span>
       <audio
         id="lecteur"
         src="{{ url_for( 'static', filename='merry.mp3' ) }}"
