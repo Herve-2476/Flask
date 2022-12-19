@@ -1,6 +1,6 @@
 h1 {
   color: white;
-  font-size: 3em;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -13,7 +13,7 @@ body {
 
 div {
   background-image: url("traineau.jpg");
-  height: 60em;
+  height: 35rem;
   width: 100%;
   vertical-align: middle;
   display: flex;
@@ -33,7 +33,7 @@ video {
 
 span {
   display: none;
-  height: 2.2em;
+  height: 2.2rem;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
@@ -42,13 +42,13 @@ span {
 label {
   color: black;
   font-weight: 900;
-  font-size: 2em;
+  font-size: 2rem;
   background-color: aliceblue;
   /* visibility: hidden; */
 }
 
 input {
-  font-size: 2em;
+  font-size: 2rem;
   /* display: none; */
 }
 img {
