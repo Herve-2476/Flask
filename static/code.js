@@ -9,8 +9,6 @@ function logKey(e) {
   var x = input.value;
   if (x.toLowerCase() == "santa claus") {
     document.getElementById("lecteur").play();
-    // document.querySelector("label").style.visibility = "hidden";
-    // input.style.display = "none";
     document.querySelector("span").style.display = "none";
     document.querySelector("video").style.display = "inline";
     document.querySelector("video").play();
@@ -20,11 +18,13 @@ function logKey(e) {
 }
 
 function clickOnQR() {
-  if (click_number >= 3) {
+  if (click_number >= 5) {
     image.style.display = "none";
     // document.querySelector("label").style.visibility = "visible";
     // input.style.display = "inline";
     document.querySelector("span").style.display = "inline";
+    document.querySelector("input").focus();
+
   } else {
     click_number++;
   }
